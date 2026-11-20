@@ -1,0 +1,7 @@
+[
+  {"ticker": "KXCRYPTOLEAD15M-26NOV201800-BTC", "title": "BTC leads crypto price moves in the next 15 minutes", "yes_price": 0.23},
+  {"ticker": "KXCRYPTOLEAD15M-26NOV201800-XRP", "title": "XRP leads crypto price moves in the next 15 minutes", "yes_price": 0.12},
+  {"ticker": "KXCRYPTOLEAD15M-26NOV201800-ETH", "title": "ETH leads crypto price moves in the next 15 minutes", "yes_price": 0.06},
+  {"ticker": "KXCRYPTOLEAD15M-26NOV201800-SOL", "title": "SOL leads crypto price moves in the next 15 minutes", "yes_price": 0.06},
+  {"ticker": "KXCRYPTOLEAD15M-26NOV201800-HYPE", "title": "HYPE leads crypto price moves in the next 15 minutes", "yes_price": 0.73}
+]

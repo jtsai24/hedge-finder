@@ -1,0 +1,853 @@
+[
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:05:22.557852Z",
+        "custom_strike": {
+          "round_digits": "4"
+        },
+        "event_ticker": "KXZEC15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 745.9008,
+        "last_price_dollars": "0.9950",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.0050",
+        "no_bid_dollars": "0.0040",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "26513.30",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' ZECUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' ZECUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 4 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXZEC15M-26NOV201800-00",
+        "title": "ZEC price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:04.406471Z",
+        "volume_24h_fp": "20404.59",
+        "volume_fp": "66893.71",
+        "yes_ask_dollars": "0.9960",
+        "yes_ask_size_fp": "30.00",
+        "yes_bid_dollars": "0.9950",
+        "yes_bid_size_fp": "1049.20",
+        "yes_sub_title": "Target Price: $745.9008"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:04:12.75317Z",
+        "custom_strike": {
+          "floor_strike": "0.0544517",
+          "round_digits": "7",
+          "strike_type": "greater_or_equal"
+        },
+        "event_ticker": "KXDOGE15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 0.054451,
+        "last_price_dollars": "0.4600",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.5700",
+        "no_bid_dollars": "0.5400",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "13346.62",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' DOGEUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' DOGEUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 7 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXDOGE15M-26NOV201800-00",
+        "title": "DOGE price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:03.319271Z",
+        "volume_24h_fp": "14126.15",
+        "volume_fp": "30360.07",
+        "yes_ask_dollars": "0.4600",
+        "yes_ask_size_fp": "27.03",
+        "yes_bid_dollars": "0.4300",
+        "yes_bid_size_fp": "102.29",
+        "yes_sub_title": "Target Price: $0.0544517"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:03:36.022642Z",
+        "custom_strike": {
+          "round_digits": "2"
+        },
+        "event_ticker": "KXBNB15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 541.33,
+        "last_price_dollars": "0.0370",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9620",
+        "no_bid_dollars": "0.9520",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "11909.79",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' BNBUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' BNBUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 2 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXBNB15M-26NOV201800-00",
+        "title": "BNB price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:02.84995Z",
+        "volume_24h_fp": "13207.37",
+        "volume_fp": "23575.22",
+        "yes_ask_dollars": "0.0480",
+        "yes_ask_size_fp": "79.00",
+        "yes_bid_dollars": "0.0380",
+        "yes_bid_size_fp": "81.00",
+        "yes_sub_title": "Target Price: $541.33"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:02:27.375293Z",
+        "custom_strike": {
+          "round_digits": "4"
+        },
+        "event_ticker": "KXSOL15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 69.3375,
+        "last_price_dollars": "0.0920",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9210",
+        "no_bid_dollars": "0.9150",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "58870.77",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' SOLUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' SOLUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 4 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXSOL15M-26NOV201800-00",
+        "title": "SOL price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:01.77015Z",
+        "volume_24h_fp": "81560.30",
+        "volume_fp": "143664.72",
+        "yes_ask_dollars": "0.0850",
+        "yes_ask_size_fp": "8.21",
+        "yes_bid_dollars": "0.0790",
+        "yes_bid_size_fp": "150.00",
+        "yes_sub_title": "Target Price: $69.3375"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:05:57.902885Z",
+        "custom_strike": {
+          "round_digits": "4"
+        },
+        "event_ticker": "KXNEAR15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 2.8771,
+        "last_price_dollars": "0.3100",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.7000",
+        "no_bid_dollars": "0.6800",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "7434.30",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' NEARUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' NEARUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 4 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXNEAR15M-26NOV201800-00",
+        "title": "NEAR price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:04.851976Z",
+        "volume_24h_fp": "5108.19",
+        "volume_fp": "15168.66",
+        "yes_ask_dollars": "0.3200",
+        "yes_ask_size_fp": "10.00",
+        "yes_bid_dollars": "0.3000",
+        "yes_bid_size_fp": "45.00",
+        "yes_sub_title": "Target Price: $2.8771"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:03:03.521901Z",
+        "custom_strike": {
+          "round_digits": "4"
+        },
+        "event_ticker": "KXXRP15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 0.9144,
+        "last_price_dollars": "0.1900",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.8300",
+        "no_bid_dollars": "0.8200",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "34916.13",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' XRPUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' XRPUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 4 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXXRP15M-26NOV201800-00",
+        "title": "XRP price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:02.379486Z",
+        "volume_24h_fp": "46328.75",
+        "volume_fp": "89856.69",
+        "yes_ask_dollars": "0.1800",
+        "yes_ask_size_fp": "7.53",
+        "yes_bid_dollars": "0.1700",
+        "yes_bid_size_fp": "277.86",
+        "yes_sub_title": "Target Price: $0.9144"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:04:47.214286Z",
+        "custom_strike": {
+          "round_digits": "4"
+        },
+        "event_ticker": "KXHYPE15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 61.5438,
+        "last_price_dollars": "0.3700",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.6400",
+        "no_bid_dollars": "0.6000",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "9589.99",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' HYPEUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' HYPEUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 4 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXHYPE15M-26NOV201800-00",
+        "title": "HYPE price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:03.807035Z",
+        "volume_24h_fp": "10324.62",
+        "volume_fp": "21055.45",
+        "yes_ask_dollars": "0.4000",
+        "yes_ask_size_fp": "46.00",
+        "yes_bid_dollars": "0.3600",
+        "yes_bid_size_fp": "45.00",
+        "yes_sub_title": "Target Price: $61.5438"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:51.655005Z",
+        "custom_strike": {
+          "round_digits": "2"
+        },
+        "event_ticker": "KXETH15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 1624.19,
+        "last_price_dollars": "0.0650",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9350",
+        "no_bid_dollars": "0.9300",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "68767.67",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' ETHUSDRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' ETHUSDRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 2 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXETH15M-26NOV201800-00",
+        "title": "ETH price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:01.331485Z",
+        "volume_24h_fp": "105456.50",
+        "volume_fp": "178218.84",
+        "yes_ask_dollars": "0.0700",
+        "yes_ask_size_fp": "22.87",
+        "yes_bid_dollars": "0.0650",
+        "yes_bid_size_fp": "300.00",
+        "yes_sub_title": "Target Price: $1,624.19"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:12.9696Z",
+        "custom_strike": {
+          "Cryptocurrency": "XRP"
+        },
+        "event_ticker": "KXCRYPTOLEAD15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "last_price_dollars": "0.0200",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9400",
+        "no_bid_dollars": "0.8800",
+        "no_sub_title": "XRP",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "14.17",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If Ripple has the highest return out of BTC (Bitcoin), ETH (Ethereum), SOL (Solana), XRP (Ripple), and HYPE (Hyperliquid) from Nov 20 - 5:45PM EST to 6:00PM EST, then the market resolves to Yes.",
+        "rules_secondary": "The return for each cryptocurrency in the specified set is calculated independently over the given time period using the formula: Return = (Ending Price \u2212 Starting Price) / Starting Price \u00d7 100. The Starting Price and Ending Price are defined as the time-weighted average of the Spot Rate values published by CFBenchmarks during the 60-second intervals immediately preceding the start and end of the time period, respectively. Final returns are calculated on an identical basis for every cryptocurrency in the set and rounded to three decimal places (as a percentage).\n\nIf two or more cryptocurrencies report an identical return (rounded to three decimal places) such that they are tied for the highest\nposition, each tied cryptocurrency's Contract will resolve to \"Yes\" with a value equal to $1 divided by the number of cryptocurrencies tied for the highest position,\nrounded down to the nearest cent, and each remaining (non-tied) cryptocurrency's\nContract will resolve to \"No.\"",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "custom",
+        "ticker": "KXCRYPTOLEAD15M-26NOV201800-XRP",
+        "title": "Which of these cryptocurrencies will have the highest return from Nov 20 - 5:45PM EST to 6:00PM EST?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "14.17",
+        "volume_fp": "15.17",
+        "yes_ask_dollars": "0.1200",
+        "yes_ask_size_fp": "0.01",
+        "yes_bid_dollars": "0.0600",
+        "yes_bid_size_fp": "3.00",
+        "yes_sub_title": "XRP"
+      },
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:12.9696Z",
+        "custom_strike": {
+          "Cryptocurrency": "SOL"
+        },
+        "event_ticker": "KXCRYPTOLEAD15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "last_price_dollars": "0.0400",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9800",
+        "no_bid_dollars": "0.9400",
+        "no_sub_title": "SOL",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "13.04",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If Solana has the highest return out of BTC (Bitcoin), ETH (Ethereum), SOL (Solana), XRP (Ripple), and HYPE (Hyperliquid) from Nov 20 - 5:45PM EST to 6:00PM EST, then the market resolves to Yes.",
+        "rules_secondary": "The return for each cryptocurrency in the specified set is calculated independently over the given time period using the formula: Return = (Ending Price \u2212 Starting Price) / Starting Price \u00d7 100. The Starting Price and Ending Price are defined as the time-weighted average of the Spot Rate values published by CFBenchmarks during the 60-second intervals immediately preceding the start and end of the time period, respectively. Final returns are calculated on an identical basis for every cryptocurrency in the set and rounded to three decimal places (as a percentage).\n\nIf two or more cryptocurrencies report an identical return (rounded to three decimal places) such that they are tied for the highest\nposition, each tied cryptocurrency's Contract will resolve to \"Yes\" with a value equal to $1 divided by the number of cryptocurrencies tied for the highest position,\nrounded down to the nearest cent, and each remaining (non-tied) cryptocurrency's\nContract will resolve to \"No.\"",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "custom",
+        "ticker": "KXCRYPTOLEAD15M-26NOV201800-SOL",
+        "title": "Which of these cryptocurrencies will have the highest return from Nov 20 - 5:45PM EST to 6:00PM EST?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "12.04",
+        "volume_fp": "13.04",
+        "yes_ask_dollars": "0.0600",
+        "yes_ask_size_fp": "10.00",
+        "yes_bid_dollars": "0.0200",
+        "yes_bid_size_fp": "3.00",
+        "yes_sub_title": "SOL"
+      },
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:12.9696Z",
+        "custom_strike": {
+          "Cryptocurrency": "HYPE"
+        },
+        "event_ticker": "KXCRYPTOLEAD15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "last_price_dollars": "0.6200",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.3700",
+        "no_bid_dollars": "0.2700",
+        "no_sub_title": "HYPE",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "142.92",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If Hyperliquid has the highest return out of BTC (Bitcoin), ETH (Ethereum), SOL (Solana), XRP (Ripple), and HYPE (Hyperliquid) from Nov 20 - 5:45PM EST to 6:00PM EST, then the market resolves to Yes.",
+        "rules_secondary": "The return for each cryptocurrency in the specified set is calculated independently over the given time period using the formula: Return = (Ending Price \u2212 Starting Price) / Starting Price \u00d7 100. The Starting Price and Ending Price are defined as the time-weighted average of the Spot Rate values published by CFBenchmarks during the 60-second intervals immediately preceding the start and end of the time period, respectively. Final returns are calculated on an identical basis for every cryptocurrency in the set and rounded to three decimal places (as a percentage).\n\nIf two or more cryptocurrencies report an identical return (rounded to three decimal places) such that they are tied for the highest\nposition, each tied cryptocurrency's Contract will resolve to \"Yes\" with a value equal to $1 divided by the number of cryptocurrencies tied for the highest position,\nrounded down to the nearest cent, and each remaining (non-tied) cryptocurrency's\nContract will resolve to \"No.\"",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "custom",
+        "ticker": "KXCRYPTOLEAD15M-26NOV201800-HYPE",
+        "title": "Which of these cryptocurrencies will have the highest return from Nov 20 - 5:45PM EST to 6:00PM EST?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "49.57",
+        "volume_fp": "202.14",
+        "yes_ask_dollars": "0.7300",
+        "yes_ask_size_fp": "5.00",
+        "yes_bid_dollars": "0.6300",
+        "yes_bid_size_fp": "4.00",
+        "yes_sub_title": "HYPE"
+      },
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:12.9696Z",
+        "custom_strike": {
+          "Cryptocurrency": "ETH"
+        },
+        "event_ticker": "KXCRYPTOLEAD15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "last_price_dollars": "0.2200",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "1.0000",
+        "no_bid_dollars": "0.9400",
+        "no_sub_title": "ETH",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "50.00",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If Ethereum has the highest return out of BTC (Bitcoin), ETH (Ethereum), SOL (Solana), XRP (Ripple), and HYPE (Hyperliquid) from Nov 20 - 5:45PM EST to 6:00PM EST, then the market resolves to Yes.",
+        "rules_secondary": "The return for each cryptocurrency in the specified set is calculated independently over the given time period using the formula: Return = (Ending Price \u2212 Starting Price) / Starting Price \u00d7 100. The Starting Price and Ending Price are defined as the time-weighted average of the Spot Rate values published by CFBenchmarks during the 60-second intervals immediately preceding the start and end of the time period, respectively. Final returns are calculated on an identical basis for every cryptocurrency in the set and rounded to three decimal places (as a percentage).\n\nIf two or more cryptocurrencies report an identical return (rounded to three decimal places) such that they are tied for the highest\nposition, each tied cryptocurrency's Contract will resolve to \"Yes\" with a value equal to $1 divided by the number of cryptocurrencies tied for the highest position,\nrounded down to the nearest cent, and each remaining (non-tied) cryptocurrency's\nContract will resolve to \"No.\"",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "custom",
+        "ticker": "KXCRYPTOLEAD15M-26NOV201800-ETH",
+        "title": "Which of these cryptocurrencies will have the highest return from Nov 20 - 5:45PM EST to 6:00PM EST?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "0.00",
+        "volume_fp": "61.00",
+        "yes_ask_dollars": "0.0600",
+        "yes_ask_size_fp": "24.00",
+        "yes_bid_dollars": "0.0000",
+        "yes_bid_size_fp": "0.00",
+        "yes_sub_title": "ETH"
+      },
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:12.9696Z",
+        "custom_strike": {
+          "Cryptocurrency": "BTC"
+        },
+        "event_ticker": "KXCRYPTOLEAD15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "last_price_dollars": "0.2200",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.7800",
+        "no_bid_dollars": "0.7700",
+        "no_sub_title": "BTC",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "42.73",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "linear_cent",
+        "price_ranges": [
+          {
+            "end": "1.0000",
+            "start": "0.0000",
+            "step": "0.0100"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If Bitcoin has the highest return out of BTC (Bitcoin), ETH (Ethereum), SOL (Solana), XRP (Ripple), and HYPE (Hyperliquid) from Nov 20 - 5:45PM EST to 6:00PM EST, then the market resolves to Yes.",
+        "rules_secondary": "The return for each cryptocurrency in the specified set is calculated independently over the given time period using the formula: Return = (Ending Price \u2212 Starting Price) / Starting Price \u00d7 100. The Starting Price and Ending Price are defined as the time-weighted average of the Spot Rate values published by CFBenchmarks during the 60-second intervals immediately preceding the start and end of the time period, respectively. Final returns are calculated on an identical basis for every cryptocurrency in the set and rounded to three decimal places (as a percentage).\n\nIf two or more cryptocurrencies report an identical return (rounded to three decimal places) such that they are tied for the highest\nposition, each tied cryptocurrency's Contract will resolve to \"Yes\" with a value equal to $1 divided by the number of cryptocurrencies tied for the highest position,\nrounded down to the nearest cent, and each remaining (non-tied) cryptocurrency's\nContract will resolve to \"No.\"",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "custom",
+        "ticker": "KXCRYPTOLEAD15M-26NOV201800-BTC",
+        "title": "Which of these cryptocurrencies will have the highest return from Nov 20 - 5:45PM EST to 6:00PM EST?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "61.22",
+        "volume_fp": "110.47",
+        "yes_ask_dollars": "0.2300",
+        "yes_ask_size_fp": "21.00",
+        "yes_bid_dollars": "0.2200",
+        "yes_bid_size_fp": "3.00",
+        "yes_sub_title": "BTC"
+      }
+    ]
+  },
+  {
+    "cursor": "",
+    "markets": [
+      {
+        "can_close_early": true,
+        "close_time": "2026-11-20T23:00:00Z",
+        "created_time": "2026-11-19T21:01:17.46135Z",
+        "custom_strike": {
+          "round_digits": "2"
+        },
+        "event_ticker": "KXBTC15M-26NOV201800",
+        "exchange_index": 2,
+        "expected_expiration_time": "2026-11-20T23:05:00Z",
+        "expiration_value": "",
+        "floor_strike": 59112.86,
+        "last_price_dollars": "0.0820",
+        "latest_expiration_time": "2026-11-27T23:00:00Z",
+        "market_type": "binary",
+        "no_ask_dollars": "0.9180",
+        "no_bid_dollars": "0.9170",
+        "no_sub_title": "Target price: TBD",
+        "notional_value_dollars": "1.0000",
+        "occurrence_datetime": "2026-11-20T23:05:00Z",
+        "open_interest_fp": "949159.29",
+        "open_time": "2026-11-20T22:45:00Z",
+        "previous_price_dollars": "0.0000",
+        "previous_yes_ask_dollars": "0.0000",
+        "previous_yes_bid_dollars": "0.0000",
+        "price_level_structure": "tapered_deci_cent",
+        "price_ranges": [
+          {
+            "end": "0.1000",
+            "start": "0.0000",
+            "step": "0.0010"
+          },
+          {
+            "end": "0.9000",
+            "start": "0.1000",
+            "step": "0.0100"
+          },
+          {
+            "end": "1.0000",
+            "start": "0.9000",
+            "step": "0.0010"
+          }
+        ],
+        "result": "",
+        "rules_primary": "If the simple average of the sixty seconds of CF Benchmarks' BRTI before 6:00 PM EST on Nov 20, 2026 is at least the simple average of the sixty seconds of CF Benchmarks' BRTI before 5:45 PM EST on November 20, 2026, then the market resolves to Yes.",
+        "rules_secondary": "Not all cryptocurrency price data is the same. While checking a source like Google or Coinbase may help guide your decision, the price used to determine this market is based on CF Benchmarks' corresponding Real Time Index (RTI). At the last minute before expiration, 60 RTI prices are collected. The official and final value is the average of these prices, rounded to the nearest 2 decimal places.",
+        "settlement_bounds_type": "default",
+        "settlement_timer_seconds": 1,
+        "status": "active",
+        "strike_type": "greater_or_equal",
+        "ticker": "KXBTC15M-26NOV201800-00",
+        "title": "BTC price up in next 15 mins?",
+        "updated_time": "2026-11-20T22:45:01.198417Z",
+        "volume_24h_fp": "1699050.83",
+        "volume_fp": "2677162.34",
+        "yes_ask_dollars": "0.0830",
+        "yes_ask_size_fp": "2629.93",
+        "yes_bid_dollars": "0.0820",
+        "yes_bid_size_fp": "297.85",
+        "yes_sub_title": "Target Price: $59,112.86"
+      }
+    ]
+  }
+]

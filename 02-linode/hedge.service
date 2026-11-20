@@ -1,0 +1,14 @@
+[Unit]
+Description=Hedge finder app on port 8001
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/root
+Environment=PORT=8001
+ExecStart=/root/.local/bin/uv run hedge_app.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

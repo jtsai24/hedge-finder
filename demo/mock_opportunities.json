@@ -1,0 +1,41 @@
+[
+  {
+    "event_ticker": "PRES28",
+    "event_title": "Who wins the 2028 presidential election?",
+    "outcomes": [
+      {"ticker": "PRES28-A", "name": "Candidate A", "yes_price": 0.31},
+      {"ticker": "PRES28-B", "name": "Candidate B", "yes_price": 0.28},
+      {"ticker": "PRES28-C", "name": "Candidate C", "yes_price": 0.22},
+      {"ticker": "PRES28-D", "name": "Candidate D", "yes_price": 0.13}
+    ],
+    "sum_of_yes_prices": 0.94,
+    "implied_edge": 0.06,
+    "explanation": "These four outcomes are mutually exclusive, but their YES prices only sum to 94 cents. Buying $1 of YES on all four costs 94 cents total and guarantees a $1 payout no matter who wins — a 6-cent risk-free profit per contract.",
+    "detected_at": "2026-11-20T21:05:00Z"
+  },
+  {
+    "event_ticker": "FEDMAR",
+    "event_title": "What will the Fed do at the March meeting?",
+    "outcomes": [
+      {"ticker": "FEDMAR-CUT", "name": "Cut rates", "yes_price": 0.41},
+      {"ticker": "FEDMAR-HOLD", "name": "Hold rates", "yes_price": 0.52},
+      {"ticker": "FEDMAR-HIKE", "name": "Hike rates", "yes_price": 0.04}
+    ],
+    "sum_of_yes_prices": 0.97,
+    "implied_edge": 0.03,
+    "explanation": "Cut, hold, and hike are mutually exclusive and exhaustive, but sum to only 97 cents. A 3-cent risk-free edge is available by buying all three outcomes.",
+    "detected_at": "2026-11-20T21:02:00Z"
+  },
+  {
+    "event_ticker": "SBOWL",
+    "event_title": "Who wins the Super Bowl?",
+    "outcomes": [
+      {"ticker": "SBOWL-X", "name": "Team X", "yes_price": 0.55},
+      {"ticker": "SBOWL-Y", "name": "Team Y", "yes_price": 0.47}
+    ],
+    "sum_of_yes_prices": 1.02,
+    "implied_edge": -0.02,
+    "explanation": "These two outcomes sum to 102 cents, slightly over fair value — no risk-free buy-side edge here. (Negative edge means skip it, not a buy signal.)",
+    "detected_at": "2026-11-20T20:58:00Z"
+  }
+]

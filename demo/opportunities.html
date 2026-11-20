@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hedge Finder</title>
+<style>
+  :root {
+    --ink: #1a1f27;
+    --ink-muted: #5b6472;
+    --surface: #ffffff;
+    --surface-sunken: #f4f6f8;
+    --border: #e3e7ec;
+    --accent: #2457c5;
+    --good: #0a7a3d;
+    --good-bg: #e6f4ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #e7eaee;
+      --ink-muted: #9aa4b2;
+      --surface: #161a20;
+      --surface-sunken: #1d222a;
+      --border: #2a313b;
+      --accent: #5b8df0;
+      --good: #3ddc84;
+      --good-bg: #113322;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 24px 16px 60px;
+    background: var(--surface-sunken);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; margin: 0 0 4px; }
+  .sub { color: var(--ink-muted); font-size: 0.9rem; margin-bottom: 20px; }
+  .input-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px; margin-bottom: 20px;
+  }
+  textarea {
+    width: 100%; min-height: 64px; resize: vertical; padding: 10px 12px;
+    border: 1px solid var(--border); border-radius: 8px; font: inherit; color: var(--ink);
+    background: var(--surface-sunken);
+  }
+  button {
+    margin-top: 10px; padding: 10px 18px; border: none; border-radius: 8px;
+    background: var(--accent); color: white; font-weight: 600; font-size: 0.95rem; cursor: pointer;
+  }
+  button:disabled { opacity: 0.6; cursor: default; }
+  .opp-box {
+    background: var(--good-bg); color: var(--good); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 16px; font-size: 0.92rem; line-height: 1.4;
+  }
+  .opp-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em;
+    color: var(--ink-muted); margin-bottom: 10px; }
+  .cards { display: grid; gap: 12px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  .card-title { font-weight: 500; }
+  .card-ticker { color: var(--ink-muted); font-size: 0.78rem; font-family: ui-monospace, monospace; }
+  .card-right { text-align: right; flex-shrink: 0; }
+  .sim-bar-track { width: 80px; height: 6px; border-radius: 3px; background: var(--border); margin-top: 6px; }
+  .sim-bar-fill { height: 100%; border-radius: 3px; background: var(--accent); }
+  .price { font-family: ui-monospace, monospace; color: var(--ink-muted); font-size: 0.85rem; }
+  .mock-note { color: var(--ink-muted); font-size: 0.78rem; margin-top: 16px; text-align: center; }
+  .empty { text-align: center; color: var(--ink-muted); padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Hedge Finder</h1>
+  <div class="sub">Enter a bet you hold. The model drafts the opposing event, then we search for real markets that match it.</div>
+
+  <div class="input-card">
+    <textarea id="bet" placeholder="e.g. BTC leads crypto price moves in the next 15 minutes">BTC leads crypto price moves in the next 15 minutes</textarea>
+    <div><button id="go">Find hedge</button></div>
+  </div>
+
+  <div id="results"></div>
+</div>
+
+<script>
+const betEl = document.getElementById("bet");
+const goEl = document.getElementById("go");
+const resultsEl = document.getElementById("results");
+
+async function run() {
+  const bet = betEl.value.trim();
+  if (!bet) return;
+  goEl.disabled = true;
+  goEl.textContent = "Searching…";
+  resultsEl.innerHTML = "";
+  try {
+    const res = await fetch("/search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ bet }),
+    });
+    if (!res.ok) throw new Error((await res.json()).detail || "Request failed");
+    const data = await res.json();
+    render(data);
+  } catch (err) {
+    resultsEl.innerHTML = `<div class="empty">${err.message}</div>`;
+  } finally {
+    goEl.disabled = false;
+    goEl.textContent = "Find hedge";
+  }
+}
+
+function render(data) {
+  const maxSim = Math.max(...data.candidates.map(c => c.similarity), 0.001);
+  resultsEl.innerHTML = `
+    <div class="opp-label">Model-generated opposing event</div>
+    <div class="opp-box">${data.generated_opposition}</div>
+    <div class="cards">
+      ${data.candidates.map(c => `
+        <div class="card">
+          <div>
+            <div class="card-title">${c.title}</div>
+            <div class="card-ticker">${c.ticker}</div>
+          </div>
+          <div class="card-right">
+            <div class="price">YES ${c.yes_price.toFixed(2)}</div>
+            <div class="sim-bar-track"><div class="sim-bar-fill" style="width:${(c.similarity / maxSim * 100).toFixed(0)}%"></div></div>
+          </div>
+        </div>
+      `).join("")}
+    </div>
+    <div class="mock-note">Retrieval: ${data.retrieval} — matched against a sample market set, not yet live Kalshi data.</div>
+  `;
+}
+
+goEl.addEventListener("click", run);
+betEl.addEventListener("keydown", e => { if (e.key === "Enter" && e.metaKey) run(); });
+</script>
+</body>
+</html>
